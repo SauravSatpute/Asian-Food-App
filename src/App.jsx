@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import OrderInstruction from './components/OrderInstruction'
 import Navbar from './components/Navbar'
 import PopularFood from './components/PopularFood'
+import Shimmer from './components/Shimmer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,6 @@ function App() {
       <Hero/>
       <OrderInstruction/>
       <PopularFood/>
-      {/* <h1 className='text-center'>Hello World</h1> */}
     </>
   )
 }

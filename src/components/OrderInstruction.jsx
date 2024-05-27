@@ -10,21 +10,25 @@ const OrderInstruction = () => {
 
 const instCardsInfo = [
     {
+        id : 1,
         src : SelectFood,
         inst : "SelectFood",
         desc : "selecting the type of food you want to order"
     },
     {
+        id : 2,
         src : Customization,
         inst : "Customization",
         desc : "specify additional ingredients, modifications, or any specific preferences you may have"
     },
     {
+        id : 3,
         src : Placement,
         inst : "Placement",
         desc : "you can either order online by adding items to your virtual cart and providing your contact"
     },
     {
+        id : 4,
         src : Pickup,
         inst : " Delivery/Pickup",
         desc : "You will typically receive a confirmation message or email that includes the details of your order, such as the estimated delivery or pickup time. "
@@ -40,7 +44,7 @@ const instCardsInfo = [
             <div className='flex justify-between py-6'>
                 {
                     instCardsInfo.map((item)=> {
-                        return <InstCard src={item.src} inst={item.inst} desc={item.desc}/>
+                        return <InstCard key={item.id} src={item.src} inst={item.inst} desc={item.desc}/>
                     })
                 }
                 
